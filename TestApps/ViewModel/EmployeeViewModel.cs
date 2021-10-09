@@ -17,10 +17,7 @@ namespace TestApps.ViewModel
         public string Name { get; set; }
         public string Address { get; set; }
         public IFormFile ProfileImage { get; set; }
-
-        [ForeignKey("Department")]
+               
         public int Deptid { get; set; }
-        [ForeignKey("Deptid")]
-        public Department Department { get; set; }
     }
 }
